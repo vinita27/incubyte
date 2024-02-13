@@ -27,4 +27,7 @@ export class SpaceCraft {
   turnRight() {
     this.direction = DIRECTION_TURNS[this.direction].right;
   }
+  turnLeft() {
+    this.direction = DIRECTION_TURNS[this.direction].left;
+  }
 }

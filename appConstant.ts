@@ -10,10 +10,10 @@ export const DIRECTION_CORDS: IDirectionCord = {
 };
 
 export const DIRECTION_TURNS: IDirectionTurn = {
-  N: { right: "E" },
-  S: { right: "W" },
-  E: { right: "S" },
-  W: { right: "N" },
-  Up: { right: "S" },
-  Down: { right: "N" },
+  N: { right: "E", left: "W" },
+  S: { right: "W", left: "E" },
+  E: { right: "S", left: "N" },
+  W: { right: "N", left: "S" },
+  Up: { right: "S", left: "N" },
+  Down: { right: "N", left: "S" },
 };
