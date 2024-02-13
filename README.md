@@ -20,22 +20,31 @@ As a scientist at ISRO controlling the latest lunar spacecraft Chandrayaan 3, yo
    ```bash
    git clone https://github.com/vinita27/incubyte.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd incubyte
-   ```
-3. Install the required dependencies:
+2. Install the required dependencies:
    ```bash
    npm ci
+   ```
+3. Run:
+   ```bash
+   npm run start
    ```
 
 ## Testing
 
-This project uses [Jest](https://jestjs.io/) for testing.
+This project uses Jest for testing.
 To run the tests execute:
 
 ```bash
-npm test
+npm run test
+```
+
+## Formating
+
+This project uses Eslint for formating.
+
+```bash
+npm run lint
+npm run lint:fix
 ```
 
 ## Contributing
