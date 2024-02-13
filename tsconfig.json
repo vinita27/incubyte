@@ -6,7 +6,12 @@
     "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
     "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts)
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
-    "outDir": "./build" // Redirect output structure to the directory
+    "outDir": "./build", // Redirect output structure to the directory
+    "moduleResolution": "node",
+    "allowJs": true,
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "preserveConstEnums": false
   },
   "include": ["./src/**/*", "tests/**/*"],
   "exclude": ["node_modules"]
