@@ -20,3 +20,4 @@ export const DIRECTION_TURNS: IDirectionTurn = {
 
 export const UP = "Up";
 export const DOWN = "Down";
+export const INVALID_COMMAND = "Invalid command";

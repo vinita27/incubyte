@@ -1,4 +1,11 @@
-import { DIRECTION_CORDS, DIRECTION_TURNS, DOWN, UP } from "../appConstant";
+import {
+  DIRECTION_CORDS,
+  DIRECTION_TURNS,
+  DOWN,
+  INVALID_COMMAND,
+  UP,
+} from "../appConstant";
+import { input } from "../types";
 export class SpaceCraft {
   x: number;
   y: number;
@@ -35,5 +42,32 @@ export class SpaceCraft {
   }
   turnDown() {
     this.direction = DOWN;
+  }
+  translator(commands: input): SpaceCraft | string {
+    for (const input of commands) {
+      switch (input) {
+        case "f":
+          this.moveForword();
+          break;
+        case "b":
+          this.moveBackword();
+          break;
+        case "u":
+          this.turnUp();
+          break;
+        case "d":
+          this.turnDown();
+          break;
+        case "l":
+          this.turnLeft();
+          break;
+        case "r":
+          this.turnRight();
+          break;
+        default:
+          return INVALID_COMMAND;
+      }
+    }
+    return this;
   }
 }

@@ -7,3 +7,4 @@ export interface IDirectionTurn {
 export interface IDirectionCord {
   [key: string]: { x: number; y: number; z: number };
 }
+export type input = string[];
