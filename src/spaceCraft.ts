@@ -1,26 +1,30 @@
-import { direction } from "../types";
-import { DIRECTION_CORDS } from "../appConstant";
+import { DIRECTION_CORDS, DIRECTION_TURNS } from "../appConstant";
 export class SpaceCraft {
   x: number;
   y: number;
   z: number;
   direction: string;
+
   constructor(x: number, y: number, z: number, direction: string) {
     this.x = x;
     this.y = y;
     this.z = z;
     this.direction = direction;
   }
-  moveForword(direction: direction) {
-    const { x, y, z } = DIRECTION_CORDS[direction];
+  moveForword() {
+    const { x, y, z } = DIRECTION_CORDS[this.direction];
     this.x += x;
     this.y += y;
     this.z += z;
   }
-  moveBackword(direction: direction) {
-    const { x, y, z } = DIRECTION_CORDS[direction];
+  moveBackword() {
+    const { x, y, z } = DIRECTION_CORDS[this.direction];
     this.x -= x;
     this.y -= y;
     this.z -= z;
+  }
+
+  turnRight() {
+    this.direction = DIRECTION_TURNS[this.direction].right;
   }
 }
