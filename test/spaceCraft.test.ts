@@ -4,7 +4,7 @@ describe("SpaceCraft", () => {
     const spaceCraft = new SpaceCraft(0, 0, 0, "N");
     expect(spaceCraft).toBeDefined();
   });
-  it("should except x,y,z  and direction", () => {
+  it("should except x,y,z and direction", () => {
     const spaceCraft = new SpaceCraft(0, 0, 0, "N");
     expect(spaceCraft).toBeDefined();
   });
