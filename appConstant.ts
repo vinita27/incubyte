@@ -4,5 +4,5 @@ export const DIRECTION_CORDS = {
   E: { x: 1, y: 0, z: 0 },
   W: { x: -1, y: 0, z: 0 },
   Up: { x: 0, y: 0, z: 1 },
-  Down: { x: 0, y: 1, z: -1 },
+  Down: { x: 0, y: 0, z: -1 },
 };

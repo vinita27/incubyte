@@ -16,6 +16,11 @@ export class SpaceCraft {
     this.x += x;
     this.y += y;
     this.z += z;
-    console.log(JSON.stringify(this));
+  }
+  moveBackword(direction: direction) {
+    const { x, y, z } = DIRECTION_CORDS[direction];
+    this.x -= x;
+    this.y -= y;
+    this.z -= z;
   }
 }
