@@ -1,4 +1,4 @@
-import { DIRECTION_CORDS, DIRECTION_TURNS } from "../appConstant";
+import { DIRECTION_CORDS, DIRECTION_TURNS, UP } from "../appConstant";
 export class SpaceCraft {
   x: number;
   y: number;
@@ -29,5 +29,8 @@ export class SpaceCraft {
   }
   turnLeft() {
     this.direction = DIRECTION_TURNS[this.direction].left;
+  }
+  turnUp() {
+    this.direction = UP;
   }
 }

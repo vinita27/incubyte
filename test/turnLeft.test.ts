@@ -1,7 +1,7 @@
 import { DIRECTION_TURNS } from "../appConstant";
 import { SpaceCraft } from "../src/spaceCraft";
 
-describe("Spacecraft turn right movement", () => {
+describe("Spacecraft turn left movement", () => {
   const directions = ["N", "S", "E", "W", "Up", "Down"];
 
   for (const direction of directions) {

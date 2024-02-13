@@ -17,3 +17,5 @@ export const DIRECTION_TURNS: IDirectionTurn = {
   Up: { right: "S", left: "N" },
   Down: { right: "N", left: "S" },
 };
+
+export const UP = "Up";
