@@ -19,3 +19,4 @@ export const DIRECTION_TURNS: IDirectionTurn = {
 };
 
 export const UP = "Up";
+export const DOWN = "Down";
